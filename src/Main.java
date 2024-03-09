@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
     static String dataFileName = "input.txt";
@@ -21,7 +20,7 @@ public class Main {
     }
 
     private static HashMap<String, Integer> countWords(String s) {
-        HashMap<String, Integer> result = new HashMap<String, Integer>();
+        HashMap<String, Integer> result = new HashMap<>();
         String[] words = s.split(" ");
         for (String word : words) {
             if (result.containsKey(word)) {
